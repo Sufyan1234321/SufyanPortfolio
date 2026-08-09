@@ -1,20 +1,8 @@
-.header{
-    
-    height: auto;
-    background-color: rgba(167, 156, 156, 0.445);
-    display: flex;
-    justify-content: center;
-}
-
-ul.header li {
-    margin: 30px;
-    list-style: none;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #907373;
-}
-ul.header li a{
-    text-decoration: none;
-    color: #000000;
-}
+.site-header { height: 82px; padding: 0 max(4vw, 24px); display: flex; align-items: center; justify-content: space-between; background: rgba(248,247,242,.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(23,35,61,.09); position: sticky; top: 0; z-index: 10; }
+.brand { display: inline-flex; gap: 10px; align-items: center; font-weight: 700; text-decoration: none; letter-spacing: -.03em; }
+.brand-mark { height: 34px; width: 34px; display: grid; place-items: center; border-radius: 50%; background: #17233d; color: #f8f7f2; font: 500 11px 'DM Mono', monospace; letter-spacing: -.08em; }
+.site-nav { display: flex; gap: 30px; margin-left: 70px; }
+.site-nav a, .footer a { text-decoration: none; font-size: 14px; font-weight: 600; transition: color .2s; }.site-nav a:hover, .footer a:hover { color: #ff654f; }
+.header-cta { padding: 11px 17px; border-radius: 99px; background: #c6f6e6; color: #17233d; text-decoration: none; font-weight: 700; font-size: 13px; }.header-cta span { margin-left: 4px; }
+.menu-button { display: none; }
+@media (max-width: 720px) { .site-header { height: 70px; }.site-nav { display: none; position: absolute; top: 70px; left: 0; right: 0; margin: 0; padding: 20px 5vw; background: #f8f7f2; border-bottom: 1px solid rgba(23,35,61,.09); flex-direction: column; gap: 18px; }.site-nav.is-open { display: flex; }.header-cta { display: none; }.menu-button { display: grid; gap: 5px; border: 0; padding: 8px; background: transparent; }.menu-button span { display: block; width: 23px; height: 2px; background: #17233d; } }
